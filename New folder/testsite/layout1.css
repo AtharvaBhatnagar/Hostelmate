@@ -1,0 +1,173 @@
+body
+{
+  background-color :#20bf55;
+  background-image :linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+  
+}
+h1{
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: rgb(12, 170, 59) solid;
+    border-width: 3px;
+    padding-left: 5px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    background-color: black;
+color: white;
+}
+#hobbies
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  margin-top: 10vh;
+}
+#gender
+{
+  font-size: 1.5rem;
+margin-left: 3.5rem;
+margin-bottom: 1.5rem;
+}
+#info
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  margin-top: 10vh;
+  margin-bottom: 1.5rem;
+}
+#em,#dob,#int,#ge,#way
+{display: block;
+  font-size: 1.5rem;
+  margin-bottom: 1.1rem;
+}
+.pref
+{
+  width: 100vw;
+  margin-left: 5vw;
+  margin-bottom: 5vh;
+margin-bottom: 2vh;
+}
+input[type="radio"]
+{
+  transform: scale(1.5);
+}
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    background: #fdfbfb;
+    /* margin-top: 1rem; */
+    width: 70vw;
+  }
+  
+  input[type="email"]
+  {
+    width: 30vw;
+    height: 5vh;
+  }
+  input[type="date"]
+  {
+    width: 30vw;
+    height: 5vh;
+  }
+  label {
+    font-size: x-large;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+ #sub
+ {
+   color: white;
+   font-size: 1rem;
+ }
+ #reset
+ {
+  background-color: #ff4e00;
+  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+  padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+   color: white;
+    font-size: 1rem;
+ }
+ #in-buttons
+ {
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+ }
+  input[type=submit] {
+    font-size: small;
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    
+    color: rgb(20, 19, 19);
+  
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  
+  .container {
+    border-radius: 5px;
+    /* background-color:rgb(29, 113, 161); */
+    padding: 20px;
+    color:black;
+  }
+  
+ 
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+     margin: 10%;
+     margin-bottom: 0;
+    }
+    #gender
+    {
+      
+      margin-left: 1rem;
+     
+    }
+    #hobbies
+    {
+      flex-direction: column;
+      justify-content: baseline;
+      display: inline-block;
+      
+    }
+  }

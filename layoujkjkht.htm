@@ -1,0 +1,103 @@
+<link rel="stylesheet" href="layout1.css">
+<title>HOSTEL MATE</title>
+
+<body>
+    
+    <h1>HOSTEL ROOM ALLOTMENT FORM</h1>
+    <form action="backend.php">
+<div class="container">
+    <form action="action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+            <label for="Course">Course</label>
+            
+          
+        </div>
+        <div class="col-75">
+            
+            <select name="myCourse" id="Course">
+                <option value="btech">B-TECH</option>
+                <option value="mtech" selected>M-TECH</option>
+                <option value="bba" selected>BBA</option>
+                <option value="mba" selected>MBA</option>
+                <option value="bca" selected>BCA</option>
+                <option value="mca" selected>MCA</option>
+            </select>
+            
+          
+        
+      </div>
+      
+        <div class="col-25">
+        <label for="branch">Branch</label>
+        </div>
+        <div class="col-75">
+        
+        <select name="mybranch" id="Branch">
+            <option value="cs">CSE</option>
+            <option value="ec" selected>ECE</option>
+            <option value="en" selected>EN</option>
+            <option value="ee" selected>EE</option>
+            <option value="me" selected>ME</option>
+            <option value="ce" selected>CE</option>
+            <option value="che" selected>CHE</option>
+            <option value="notapplicable" selected>NOT APPLICABLE</option>
+        </select>
+    </div>
+    <div>
+        Hobbies: <br><textarea name="myText" cols="90" rows="10"></textarea>
+    </div>
+    <br>
+    <div>
+        Interests: <br><textarea name="myText" cols="90" rows="10"></textarea>
+    </div>
+    <br>
+    <div>
+        Achievements: <br><textarea name="myText" cols="90" rows="10"></textarea>
+    </div>
+    
+    <div>
+        Email: <input type="email" name="myEmail">
+    </div>
+
+    <br>
+    <div>
+        DOB: <input type="date" name="myDate">
+    </div>
+    
+    <br>
+    <div>
+        Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+        Other <input type="radio" name="myGender">
+    </div>
+
+    <br>
+    <div>
+        Write about yourself: <br><textarea name="myText" cols="90" rows="10"></textarea>
+    </div>
+
+    <br>
+
+    <div>
+        <input type="submit" value="Submit Now">
+        <input type="reset" value="Reset Now">
+    </div>
+</form>
+</body>
+    

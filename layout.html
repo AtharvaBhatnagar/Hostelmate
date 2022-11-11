@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOSTEL MATE</title>
+  <link rel="stylesheet" href="layout1.css">
+</head>
+
+<body>
+  <h1>HOSTEL ROOM ALLOTMENT FORM</h1>
+  
+    <form action="insert.php" METHOD="POST">
+      <div class="container">
+        <form action="action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="Course">Course</label>
+
+
+            </div>
+            <div class="col-75">
+
+              <select name="myCourse" id="Course">
+                <option value="btech">B-TECH</option>
+                <option value="mtech" selected>M-TECH</option>
+                <option value="bba" selected>BBA</option>
+                <option value="mba" selected>MBA</option>
+                <option value="bca" selected>BCA</option>
+                <option value="mca" selected>MCA</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="branch">Branch</label>
+
+
+            </div>
+            <div class="col-75">
+
+              <select name="mybranch" id="Branch">
+                <option value="cs">CSE</option>
+                <option value="ec" selected>ECE</option>
+                <option value="en" selected>EN</option>
+                <option value="ee" selected>EE</option>
+                <option value="me" selected>ME</option>
+                <option value="ce" selected>CE</option>
+                <option value="che" selected>CHE</option>
+                <option value="notapplicable" selected>NOT APPLICABLE</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-25">
+              <label for="marks">10th Marks</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="marks" name="10th marks" placeholder="Your marks...">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="marks">12th Marks</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="marks" name="12th marks" placeholder="Your marks...">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="marks">Last Semester marks</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="marks" name="last semester marks" placeholder="Your marks...">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="marks">Roll Number</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="roll number" name="roll number" placeholder="Your roll number...">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="marks">Section</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="section" name="section" placeholder="Your section...">
+            </div>
+          </div>
+      </div>
+
+      <div class="row">
+        <div id="hobbies">
+          <span class="pref"> Hobbies:</span> <span>Sports</span> <input type="radio" name="myHobbies"> <span> Art</span> <input type="radio" name="myHobbies">
+          <span> Indoor Games</span> <input type="radio" name="myHobbies"> <span> Others</span> <input type="radio" name="myHobbies">
+        </div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div id="info">
+        <span class="pref"> Prefered Study Hours:</span> Early Morning <input type="radio" name="myStudyhours"> Morning <input type="radio"
+            name="myStudyhours">
+          Night <input type="radio" name="myStudyhours"> Late Night <input type="radio" name="myStudyhours">
+        </div>
+      </div>
+      </br>
+      <br>
+
+      <div class="row">
+        <div class="pref">
+          <span id="int"> Interests:</span> 
+          <textarea name="" id="" cols="30" rows="10" class="interest">
+
+          </textarea>
+        </div>
+      </div>
+      <br>
+
+
+      <div class="row">
+        <div class="pref">
+
+
+          <span id="em"> Email:</span> <input type="email" name="myEmail" placeholder="E-mail">
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="pref">
+         <span id="dob"> DOB:</span> <input type="date" name="myDate">
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div id="gender">
+          <span id="ge"> Gender:</span> Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+          Other <input type="radio" name="myGender">
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="pref">
+         <span id="way"> Write about yourself:</span> <br><textarea name="myText" cols="90" rows="10"></textarea>
+        </div>
+      </div>
+
+
+      <br>
+
+      <div id="in-buttons">
+        <input type="submit" value="Submit Now" id="sub">
+        <input type="reset" value="Reset Now" id="reset">
+      </div>
+    </form>
+</body>
+
+</html>
