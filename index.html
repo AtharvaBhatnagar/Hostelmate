@@ -6,21 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HOSTEL MATE</title>
-  <link rel="stylesheet" href="layout1.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <h1>HOSTEL ROOM ALLOTMENT FORM</h1>
   
-    <form action="entry_details.php" method="post">
+    <form action="insert.php" METHOD="POST" >
       <div class="container">
-        <form action="action_page.php" method="post">
+        <form action="action_page.php">
           <div class="row">
             <div class="col-25">
-              <label for="fname">First Name</label>
+              <label for="fname" >First Name</label>
             </div>
             <div class="col-75">
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." class="lbl">
             </div>
           </div>
           <div class="row">
@@ -28,7 +28,7 @@
               <label for="lname">Last Name</label>
             </div>
             <div class="col-75">
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.." class="lbl">
             </div>
           </div>
           <div class="row">
@@ -76,7 +76,7 @@
               <label for="marks">10th Marks</label>
             </div>
             <div class="col-75">
-              <input type="text" id="marks" name="10th marks" placeholder="Your marks...">
+              <input type="text" id="marks" name="10th marks" placeholder="Your marks..." class="lbl">
             </div>
           </div>
           <div class="row">
@@ -84,7 +84,7 @@
               <label for="marks">12th Marks</label>
             </div>
             <div class="col-75">
-              <input type="text" id="marks" name="12th marks" placeholder="Your marks...">
+              <input type="text" id="marks" name="12th marks" placeholder="Your marks..." class="lbl">
             </div>
           </div>
 
@@ -93,7 +93,7 @@
               <label for="marks">Last Semester marks</label>
             </div>
             <div class="col-75">
-              <input type="text" id="marks" name="last semester marks" placeholder="Your marks...">
+              <input type="text" id="marks" name="last semester marks" placeholder="Your marks..." class="lbl">
             </div>
           </div>
           <div class="row">
@@ -101,7 +101,7 @@
               <label for="marks">Roll Number</label>
             </div>
             <div class="col-75">
-              <input type="text" id="roll number" name="rollnumber" placeholder="Your roll number...">
+              <input type="text" id="roll number" name="roll number" placeholder="Your roll number..." class="lbl">
             </div>
           </div>
           <div class="row">
@@ -109,24 +109,24 @@
               <label for="marks">Section</label>
             </div>
             <div class="col-75">
-              <input type="text" id="section" name="section" placeholder="Your section...">
+              <input type="text" id="section" name="section" placeholder="Your section..." class="lbl">
             </div>
           </div>
       </div>
 
       <div class="row">
         <div id="hobbies">
-          <span class="pref"> Hobbies:</span> <span>Sports</span> <input type="radio" name="hobbies"> <span> Art</span> <input type="radio" name="hobbies">
-          <span> Indoor Games</span> <input type="radio" name="hobbies"> <span> Others</span> <input type="radio" name="hobbies">
+          <span class="pref"> Hobbies:</span> <span>Sports</span> <input type="radio" name="myHobbies"> <span> Art</span> <input type="radio" name="myHobbies">
+          <span> Indoor Games</span> <input type="radio" name="myHobbies"> <span> Others</span> <input type="radio" name="myHobbies">
         </div>
       </div>
       <br>
 
       <div class="row">
         <div id="info">
-        <span class="pref"> Prefered Study Hours:</span> Early Morning <input type="radio" name="mystudyhours"> Morning <input type="radio"
-            name="mystudyhours">
-          Night <input type="radio" name="mystudyhours"> Late Night <input type="radio" name="mystudyhours">
+        <span class="pref"> Prefered Study Hours:</span> Early Morning <input type="radio" name="myStudyhours"> Morning <input type="radio"
+            name="myStudyhours">
+          Night <input type="radio" name="myStudyhours"> Late Night <input type="radio" name="myStudyhours">
         </div>
       </div>
       </br>
@@ -135,7 +135,7 @@
       <div class="row">
         <div class="pref">
           <span id="int"> Interests:</span> 
-          <textarea name="interests" id="" cols="30" rows="10" class="interest">
+          <textarea name="" id="" cols="30" rows="10" class="interest">
 
           </textarea>
         </div>
@@ -147,7 +147,7 @@
         <div class="pref">
 
 
-          <span id="em"> Email:</span> <input type="email" name="email" placeholder="E-mail">
+          <span id="em"> Email:</span> <input type="email" name="myEmail" placeholder="E-mail">
         </div>
       </div>
 
@@ -155,7 +155,7 @@
 
       <div class="row">
         <div class="pref">
-         <span id="dob"> DOB:</span> <input type="date" name="dob">
+         <span id="dob"> DOB:</span> <input type="date" name="myDate">
         </div>
       </div>
 
@@ -163,8 +163,8 @@
 
       <div class="row">
         <div id="gender">
-          <span id="ge"> Gender:</span> Male <input type="radio" name="gender"> Female <input type="radio" name="gender">
-          Other <input type="radio" name="gender">
+          <span id="ge"> Gender:</span> Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+          Other <input type="radio" name="myGender">
         </div>
       </div>
 
@@ -172,7 +172,7 @@
 
       <div class="row">
         <div class="pref">
-         <span id="way"> Write about yourself:</span> <br><textarea name="aboutyou" cols="90" rows="10"></textarea>
+         <span id="way"> Write about yourself:</span> <br><textarea name="myText" cols="90" rows="10"></textarea>
         </div>
       </div>
 
@@ -180,11 +180,11 @@
       <br>
 
       <div id="in-buttons">
-        <input type="submit" name="Submit" value="submit" id="sub">
+        <input type="submit" value="Submit Now" id="sub">
         <input type="reset" value="Reset Now" id="reset">
       </div>
     </form>
-</body>
-<!-- INSERT INTO `miniprojectdata` (`firstname`, `lastname`, `mycourse`, `mybranch`, `10th_marks`, `12th_marks`, `last_semester_marks`, `roll_number`, `section`, `myHobbies`, `myStudyhours`, `interests`, `myEmail`, `myDate`, `myGender`, `myText`) VALUES ('qweqw', 'qewqwe', 'weqq', 'qweqw', '12', '34', '23', '2211331', 'adda', 'fdad', '12', 'adada', 'aasasa', '2022-02-02', 'm', 'adsaa');  -->
+<script src="./index.js"></script>
+  </body>
 
 </html>
